@@ -2,8 +2,8 @@ package pack01.variable;
 
 public class Ex03_Variable {
 	public static void main(String[] args) {
-		int value;
-		int result = value + 10;
+		int value= 10;
+		int result = value + 20;
 		System.out.println(value);
 	}
 
