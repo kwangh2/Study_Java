@@ -13,8 +13,10 @@ public class Ex04_CastingFinich {
 		int number4 = number2 +100;
 		int intNumber1 = (int) number3; //DownCasting
 		System.out.println(intNumber1);
-		
 		short shortNumber1 = (short) number4;
 		System.out.println(shortNumber1); //DownCasting
+		int buu = 100;
+		String Zmm = buu+"";
+		System.out.println(Zmm);
 	}
 }
