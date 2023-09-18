@@ -10,5 +10,7 @@ public class Ex08_Oper {
 		System.out.println(result);
 		result *=3; // result * 3 
 		result /=5; // result / 5
+		result %=2; // result % 2
+		
 	}
 }
