@@ -18,5 +18,6 @@ public class Ex04_CastingFinich {
 		int buu = 100;
 		String Zmm = buu+"";
 		System.out.println(Zmm);
+		
 	}
 }
