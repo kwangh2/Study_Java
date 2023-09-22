@@ -6,21 +6,10 @@ import java.util.Scanner;
 public class Ex01_HighLow {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		// String Number = sc.nextLine();
-		// System.out.println(Number);
-//		 int IntNumber = Integer.parseInt(Number);
-//		 System.out.println(IntNumber + 10);
 		System.out.println("게임시작하려면 0, 종료는 -1을 입력해주세요.");
-		String Start = sc.nextLine();
+		String Start = sc.nextLine();//시작
 		int StartStop = Integer.parseInt(Start);
-		while (true) {
-			if (StartStop == 0) {
-				continue;
-			}
-			else {
-				break;
-			}
-		}
+		if (StartStop == 0) {
 		System.out.println("하이로우게임입니다. 최대치 숫자를 입력해주세요");
 		String str = sc.nextLine();
 		int intStr = Integer.parseInt(str);
@@ -38,8 +27,12 @@ public class Ex01_HighLow {
 			} else if (inthighlow > randonNumber) {
 				System.out.println("High");
 			} else {
-				System.out.println("Low");
+				System.out.println("Low");}
 			}
+		
+		}else {
+			System.out.println("게임종료");
 		}
+		
 	}
 }
