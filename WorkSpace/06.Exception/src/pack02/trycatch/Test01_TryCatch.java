@@ -9,9 +9,7 @@ public class Test01_TryCatch {
 		while (true) {
 			String intNum = sc.nextLine();
 			try {
-
 				int num1 = Integer.parseInt(intNum);
-
 				if (num1 == -1) {
 					System.out.println("종료");
 					break;
@@ -19,7 +17,6 @@ public class Test01_TryCatch {
 					sum += num1;
 					System.out.println("누적값 : " + sum);
 				}
-
 			} catch (NumberFormatException e) {
 				System.out.println("잘못된 입력!");
 
@@ -27,6 +24,5 @@ public class Test01_TryCatch {
 				System.out.println("잘못된 입력!!");
 			}
 		}
-
 	}
 }
