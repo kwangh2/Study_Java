@@ -41,11 +41,7 @@ public class Ex04_Lotto {
 				}
 			}		System.out.println(Arrays.toString(Lotto));
 
-			for (int i = 0; i < 6; i++) {
-				if (Lotto[i] == userNum[i]) {
-					right += 1;
-				}
-			}
+
 		}
 		if (select == 0) {
 			for (int i = 0; i < Lotto.length; i++) {
@@ -59,12 +55,8 @@ public class Ex04_Lotto {
 						userRandomLotto[j] = num;
 					}
 				}
-			}System.out.println(Arrays.toString(userRandomLotto));
-			for (int i = 0; i < 6; i++) {
-				if (Lotto[i] == userNum[i]) {
-					right += 1;
-				}
-			}
+			}System.out.print("자동번호 : ");
+			System.out.println(Arrays.toString(userRandomLotto));
 		}
 	
 		for (int i = 0; i < Lotto.length; i++) {
@@ -85,7 +77,12 @@ public class Ex04_Lotto {
 				}
 			}
 		}
-
+		for (int i = 0; i < 6; i++) {
+			if (Lotto[i] == userRandomLotto[i] ||Lotto[i] == userNum[i]) {
+				right += 1;
+			}
+		}System.out.print("당첨 번호:");
+		System.out.println(Arrays.toString(Lotto));
 		System.out.println("맞춘 번호 수 : " + right);
 	}
 }
