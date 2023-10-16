@@ -14,8 +14,8 @@ public class MenuDTO {
 	// 관리자
 	//다 선택할수있게 마지막은 이전으로.
 	//메뉴 
-		private String Name;
- 		private int money, refund, price, num;
+		private String Name, price;
+ 		private int money, refund,  num;
 		int menuList;
 		String[] newMenu = {null,null,null};
 		String[] menu1 = {"1", "아메리카노" , "2000"};
@@ -48,10 +48,10 @@ public class MenuDTO {
 		public void setRefund(int refund) {
 			this.refund = refund;
 		}
-		public int getPrice() {
+		public String getPrice() {
 			return price;
 		}
-		public void setPrice(int price) {
+		public void setPrice(String price) {
 			this.price = price;
 		}
 		public int getNum() {

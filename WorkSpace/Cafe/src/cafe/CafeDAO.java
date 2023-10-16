@@ -13,9 +13,11 @@ public class CafeDAO {
 
 		while (true) {
 			System.out.println("Id 입력");
-			String inputId = sc.nextLine();
+			String inputId;
+			inputId = sc.nextLine();
 			System.out.println("Pw 입력");
-			String inputPw = sc.nextLine();
+			String inputPw;
+			 inputPw = sc.nextLine();
 
 			if (inputId.equals(infoDto.getUserId()) && inputPw.equals(infoDto.getUserPw())) {
 				// 사용자 모드 식 대입
@@ -46,9 +48,15 @@ public class CafeDAO {
 		for (int i = 0; i < menuDto.allmenu.length; i++) {
 			System.out.println(Arrays.toString(menuDto.allmenu[i]));
 		} // 메뉴선택
-
+		
 		int choose = sc.nextInt() - 1;
-		int price = Integer.parseInt(menuDto.allmenu[choose][2]);
+		int price = 0;
+		try {
+		price = Integer.parseInt(menuDto.allmenu[choose][2]);
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("메뉴 번호를 확인해주세욘");
+		}
+		
 		// 상품선택
 //		System.out.println(price);
 		// 상품 구매
@@ -59,17 +67,21 @@ public class CafeDAO {
 	}
 
 	public int manageOption() {
-		System.out.println("메뉴수정은 1 / 정보수정은 0");
+		System.out.println("정보수정은 0 /메뉴수정은 1 / 메뉴추가 2 / 메뉴삭제 3");
 		int tempNum = sc.nextInt();
 		sc.nextLine();
 		if (tempNum == 1) {
-			return 1;
-		}else {
+			return 1;//메뉴수정
+		}else if (tempNum ==0) {
+			return 0;//비밀번호 변경
+		}else if (tempNum == 2) {
 			return 2;
+		} else{
+			return 3;
 		}
 			
 	} 
-
+	
 	public void manage() { // 관리자 모드
 		System.out.println("메뉴를 선택해주세요");
 		for (int i = 0; i < menuDto.allmenu.length; i++) {
@@ -108,7 +120,8 @@ public class CafeDAO {
 		}
 	}//상품 추가,삭제 선택
 	public void menuPlus() {
-		System.out.println(menuDto.allmenu.length);
+		
+		System.out.println("asdasd");
 		
 	}
 	
