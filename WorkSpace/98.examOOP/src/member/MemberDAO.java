@@ -6,8 +6,8 @@ import product.ProductDAO;
 public class MemberDAO {
 		Common common;
 		ProductDAO dao;
-	public MemberDAO(Common common) {
-		this.common = common;
+	public MemberDAO(Common a) {
+		this.common = a;
 	}
 	//테스트 데이터 부분(DB가 아직 없거나 연결직전 테스트)
 	public MemberDTO[] getLoginDatas() {
@@ -41,7 +41,7 @@ public class MemberDAO {
 	
 	public void startUserMode() {
 		if (common.getLoginInfo() == null) return;
-		dao = new ProductDAO(common);
+//		dao = new ProductDAO(common);
 		
 		while(true) {
 			System.out.println("1. 금액입력 2. 상품구매 3. 잔돈확인 4.종료(로그아웃)");
@@ -92,6 +92,7 @@ public class MemberDAO {
 //					System.out.println("로그인 성공 " + common.getLoginInfo());
 //				}
 			}else if (choiceMenu == 2 ) {
+				login(common.getStrScanner("아이디입력"), common.getStrScanner("패스워드 입력"));
 				startAdminMode();
 			}else if (choiceMenu == 3) {
 				System.out.println("종료");
