@@ -7,7 +7,7 @@ public class Main {
 		Parent parent = child;
 		parent.method1();
 		parent.method2();
-//		parent = new Child2(); 
+		parent = new Child2(); 
 		parent.method1();
 		parent.method2();
 		//Parent 라는 더 큰 범위안에 다양한 자식클래스를 빠궈가면서 사용하는게 가능함.
