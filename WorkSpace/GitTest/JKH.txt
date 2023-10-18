@@ -1,1 +1,6 @@
+<<<<<<< Updated upstream
 13
+=======
+12A
+13
+>>>>>>> Stashed changes
