@@ -35,7 +35,7 @@ public class BlackjackDAO {
 		}
 	}
 	
-	public void name() {
+	public void () {
 		
 	}
 	
