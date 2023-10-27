@@ -26,6 +26,9 @@ class TestcaseDAO {
 		int result = dao.number1(6, 4);
 		
 		assertEquals(result, 10);
+		//then : 검증오류
+		
+		
 	}
 	
 	
