@@ -27,6 +27,7 @@ public class Ex02_Thread {
 		Thread thread = new Thread(run);
 		thread.start();
 		System.out.println("요기는 메인메소드 스레드 코드 ");
+		
 	}
 	
 }
