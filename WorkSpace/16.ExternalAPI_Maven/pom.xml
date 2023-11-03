@@ -22,5 +22,11 @@
     <artifactId>ojdbc11</artifactId>
     <version>21.8.0.0</version>
 </dependency>
+<!-- jkh 추가 : 이메일 전송을 위한 라이브러리 (SMTP 서버 사용함. 네이버메일 설정함.-->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-email</artifactId>
+    <version>1.5</version>
+</dependency>
   </dependencies>
 </project>

@@ -124,6 +124,7 @@ public class MemberDAO {
 			try {
 				PreparedStatement ps = conn.prepareStatement("select count(*) from member where member.id = ?");
 				ResultSet rs = ps.executeQuery();
+				rs.next();
 				System.out.println(rs);
 				
 			} catch (SQLException e) {

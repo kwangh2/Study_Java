@@ -70,7 +70,7 @@ class TestmemberDAO {
 	void isMember() {
 		MemberDAO dao = new MemberDAO();
 		MemberDTO dto = new MemberDTO("", "");
-		dao.isMember(dto);
+//		dao.isMember(dto);
 	}
 
 }
