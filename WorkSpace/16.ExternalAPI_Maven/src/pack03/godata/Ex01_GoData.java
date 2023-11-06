@@ -92,8 +92,5 @@ public class Ex01_GoData {
 			@SerializedName("비고")
 			public String comment;
 		}
-		
 	}
-	
-	
 }
